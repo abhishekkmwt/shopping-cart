@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Josefin+Sans:wght@300&family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+/*------------NavBar-----------*/
+.container{
+    max-width:1550px;
+    width: 100%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height:5rem;
+    align-items: center;
+    padding: 0px 9rem;
+    background-color: black;
+    margin-top: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+}
+
+nav .nav-items .items li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+nav .nav-items .items li::marker{
+    content: none;
+}
+
+nav .nav-items .items{
+    display: flex;
+    column-gap: 1.7rem;
+}
+
+nav .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .4rem;
+}
+nav .button .login-button button{
+    background-color: #F2DEDF;
+    color: black;
+    border: 2px solid black;
+    width:6rem;
+    padding:0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav .button .signup-button button{
+    background-color: #F2DEDF;
+    color: black;
+    border: 2px solid black;
+    width:6rem;
+    padding:0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*------------Section1-----------*/
+.section1{
+    background-color: white;
+    padding: 5rem 9rem 0 9rem;
+}
+.section1 .upper{
+    display: flex;
+    justify-content: center;
+}
+
+.section1 .upper .left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.section1 .upper .left .left-top{
+    font-size: 4rem;
+    font-weight: 500;
+    max-width: 90%;
+    padding: 2.5rem 0;
+    letter-spacing: .1rem;
+}
+.section1 .upper .left .left-center{
+    font-size: 1.1rem;
+    padding: 2rem 0;
+    max-width: 60%;
+}
+.section1 .upper .left .left-bottom{
+    padding: 2rem 0; 
+    
+}
+.section1 .upper .left .left-bottom #login1{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    width:12rem;
+    padding:0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.section1 .upper .left .left-bottom  #signup1{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    width:12rem;
+    padding:0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.section1 .upper .right{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.section1 .upper .right img{
+    width: 90%;
+}
+
+.section1 .lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.section1 .lower img{
+    width: 100%;
+}
+
+
+
+
+/*signup and login page*/
+
+.form-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 30vw;
+    margin-top: 8rem;
+    padding:3rem 2rem;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 30rem;
+}
+
+form h1{
+    padding-bottom:2rem;
+}
+form input{
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 2rem;
+    padding: 0 .5rem;
+    border: 1px solid gainsboro;
+    outline: black;
+}
+
+form button{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    width:12rem;
+    padding:0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+/*Shop page*/
+
+aside{
+    width: 15vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: fixed;
+    padding: 0 1rem 1rem 1rem;
+    top:5rem;
+    z-index: 1000;
+}
+.name{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: .5rem 0;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+}
+
+.colors .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputs div{
+    padding: .1rem 0;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    font-size: .9rem;
+}
+
+.applyBtn{
+    width:100%;
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.applyBtn button{
+    background-color:black;
+    color: white;
+    border: 2px solid white;
+    width:80%;
+    padding:0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    height: 3rem;
+
+}
+.rating,.sizes{
+    border-top: 1px solid rgba(255, 255, 255, 0.304);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.292);
+    padding:.5rem 0;
+}
+
+.colors{
+    border-top: 1px solid rgba(255, 255, 255, 0.304);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.292);
+    padding:0 0 .5rem 0;
+}
+
+.rating .rangeNum{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+
+.main-container{
+    width: 83vw;
+    position: relative;
+    left: 15vw;
+    top: 5rem;
+    padding: 2rem;
+}
+
+.main-container .search{
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    padding: 0.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.main-container .search input{
+    width: 100%;
+    border: none;
+    padding: .1rem .3rem;
+    height: 2rem;
+    outline: none;
+}
+.main-container .search image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container .search img{
+    width: 70%;
+}
+
+.main-container .buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.buttons button{
+    background-color:white;
+    color: black;
+    border: 2px solid black;
+    width: 98%;
+    padding:0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    height: 3rem;
+}
+
+.main-container .category-name{
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    min-width: 20vw;
+    max-width: 20vw;
+}
+
+.card .item-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    min-height: 300px;
+}
+.card .item-image img{
+    width: 15rem;
+    height: 15rem;
+}
+.card .item-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    row-gap: .4rem;
+    min-height: 100px;
+}
+.card .item-details .prizeAndSize{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .addToCartBtn1,.card .addToCartBtn2,.card .addToCartBtn3,.card .addToCartBtn4{
+    width: 100%;
+}
+.card .addToCartBtn1 button,.card .addToCartBtn2 button,.card .addToCartBtn3 button,.card .addToCartBtn4 button{
+    background-color:black;
+    color: white;
+    border: 2px solid black;
+    width: 100%;
+    padding:0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    height: 3rem;
+}
+
+.mens-items,.womens-items,.j-items,.e-items{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow: scroll;
+}
+.mens-items::-webkit-scrollbar,.womens-items::-webkit-scrollbar,.j-items::-webkit-scrollbar,.e-items::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*mycart page*/
+
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+}
+
+.myCart-name{
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+.main-cart{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 5rem;
+}
+
+.left-mainCart{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.right-mainCart{
+    width: 30%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-mainCart .checkout-name{
+    padding: 2rem 1rem 3rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.right-mainCart .checkout-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.right-mainCart .totalAmt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.359);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+}
+
+.right-mainCart .totalAmt .total{
+    font-weight: 500;
+}
+
+.right-mainCart .checkoutBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.right-mainCart .checkoutBtn button{
+    background-color:white;
+    color: black;
+    border: 2px solid white;
+    width: 70%;
+    padding:0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    height: 3rem;
+    margin-bottom: 5rem;
+}
+
+.buttons .active{
+    background-color: black;
+    color: white;
+}

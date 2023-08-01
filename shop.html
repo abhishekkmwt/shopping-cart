@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+        <div class="brand">
+            <a href="#"><img src="./assets/MeShop..png"></a>
+        </div>
+
+        <div class="nav-items">
+            <ul class="items">
+                <li><a href="#" id="home">HOME</a></li>
+                <li><a href="#" id="login-index">LOGIN</a></li>
+                <li><a href="#" id="signup-index">SIGNUP</a></li>
+                <li><a href="#" id="mycart-index">MY CART</a></li>
+                <li><a href="#" id="profile.index">PROFILE</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <aside>
+            <div class="colors">
+                <div class="name">Colors</div>
+                <div class="inputs">
+                    <div><input type="checkbox" value="Red" class="color-filter"> Red</div>
+                    <div><input type="checkbox" value="Blue" class="color-filter"> Blue</div>
+                    <div><input type="checkbox" value="Green" class="color-filter"> Green</div>
+                    <div><input type="checkbox" value="Black" class="color-filter"> Black</div>
+                    <div><input type="checkbox" value="White" class="color-filter"> White</div>
+                </div>
+            </div>
+            <div class="sizes">
+                <div class="name">Sizes</div>
+                <div class="inputs">
+                    <div><input type="checkbox" value="S" class="size-filter"> S</div>
+                    <div><input type="checkbox" value="M" class="size-filter"> M</div>
+                    <div><input type="checkbox" value="L" class="size-filter">L</div>
+                    <div><input type="checkbox" value="XL" class="size-filter"> XL</div>
+                </div>
+            </div>
+            <div class="rating">
+                <div class="name">Rating</div>
+                <input type="range" min="0" max="5" step="1" id="slider">
+                <div class="rangeNum">
+                    <div>0</div>
+                    <div>5</div>
+                </div>
+            </div>
+            <div class="sizes">
+                <div class="name">Price Range</div>
+                <div class="inputs">
+                    <div><input type="checkbox" value="25" class="price-filter">$0 To $25</div>
+                    <div><input type="checkbox" value="50" class="price-filter"> $26 To $50</div>
+                    <div><input type="checkbox" value="100" class="price-filter"> $51 To $100</div>
+                    <div><input type="checkbox" value="100" class="price-filter"> $101 onwards</div>
+                </div>
+            </div>
+
+            <div class="applyBtn">
+                <button type="submit" id="applyFilter">Apply Filter</button>
+            </div>
+        </aside>
+
+        <div class="main-container">
+            <div class="search">
+                <div class="image">
+                    <img src="./assets/ant-design_search-outlined.png" alt="search">
+                </div>
+                <input type="search" id="search" placeholder="Search">
+            </div>
+
+            <div class="buttons">
+                <div class="all">
+                    <button type="submit" id="all" class="active">All</button>
+                </div>
+                <div class="Mens">
+                    <button type="submit" id="mens">Mens</button>
+                </div>
+                <div class="Womens">
+                    <button type="submit" id="womens">Womens</button>
+                </div>
+                <div class="Jewellery">
+                    <button type="submit" id="jewellery">Jewellery</button>
+                </div>
+                <div class="Electronics">
+                    <button type="submit" id="electronics">Electronics</button>
+                </div>
+            </div>
+            <div class="items-container">
+                <div class="category-name men">
+                    Men's Clothing
+                </div>
+        
+                <div class="mens-items">
+                    
+                </div>
+                <div class="category-name women">
+                    Women's Clothing
+                </div>
+        
+                <div class="womens-items">
+                    
+                </div>
+                <div class="category-name jewel">
+                    Jewellery
+                </div>
+        
+                <div class="j-items">
+                    
+                </div>
+                <div class="category-name electro">
+                    Electronics
+                </div>
+        
+                <div class="e-items">
+                    
+                </div>
+                
+            </div>
+            
+            
+        </div>
+
+        
+    </main>
+    </div>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

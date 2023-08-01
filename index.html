@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+        <div class="brand">
+            <a href="#"><img src="./assets/MeShop..png"></a>
+        </div>
+
+        <div class="nav-items">
+            <ul class="items">
+                <li><a href="#" id="home">HOME</a></li>
+                <li><a href="#" id="login-index">LOGIN</a></li>
+                <li><a href="#" id="signup-index">SIGNUP</a></li>
+                <li><a href="#" id="mycart-index">MY CART</a></li>
+                <li><a href="#" id="profile.index">PROFILE</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="section1">
+            <div class="upper">
+                <div class="left">
+                    <div class="left-top">
+                        The Best Store To Shop Online <u>MeShop</u>
+                    </div>
+                    <div class="left-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat mollitia sunt quidem doloremque rerum minima fugiat et odit officiis vel, deleniti excepturi repudiandae omnis quas aliquid nostrum est.
+                    </div>
+                    <div class="left-bottom">
+                        <button type="submit" id="login1">Login</button>
+                        <button type="submit" id="signup1">Signup</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./assets/undraw_web_shopping_re_owap 1.png" alt="photo">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        signup1Btn.addEventListener('click',()=>{
+            window.location.href='./signup.html'
+        })
+
+        login1Btn.addEventListener('click',()=>{
+            window.location.href='./login.html'
+        })
+    </script>
+</body>
+</html>

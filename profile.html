@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+        <div class="brand">
+            <a href="#"><img src="./assets/MeShop..png"></a>
+        </div>
+
+        <div class="nav-items">
+            <ul class="items">
+                <li><a href="#" id="home">HOME</a></li>
+                <li><a href="#" id="login-index">LOGIN</a></li>
+                <li><a href="#" id="signup-index">SIGNUP</a></li>
+                <li><a href="#" id="mycart-index">MY CART</a></li>
+                <li><a href="#" id="profile.index">PROFILE</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="form-container">
+            
+            <form id="profile-form">
+                <h1>My Profile</h1>
+                <input type="text" name="first-name" placeholder="First Name" id="first-name">
+                <input type="text" name="last-name" placeholder="Last Name" id="last-name">
+                <button type="submit" id="save-info">Save Info</button>
+            </form>
+
+            <form id="pass-form">
+                <h1>Edit Password</h1>
+                <input type="password" name="oldPassword" placeholder="Old Password" id="old-pass">
+                <input type="password" name="newPassword" placeholder="New Password" id="new-pass">
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" id="conf-pass">
+                <button type="submit" id="changePass">Change Password</button>
+                <button type="submit" id="logout">Logout</button>
+            </form>
+        </div>
+    </main>
+    </div>
+    <script src="index.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
