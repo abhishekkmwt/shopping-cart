@@ -118,6 +118,7 @@ function menClothing(pArray){
                     }
                     currentUser.cart.push(menClothingArray[index]);
                     localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                    totalCartPrice()
                 });
          });
     }
@@ -194,6 +195,7 @@ function womenClothing(pArray){
                     }
                     currentUser.cart.push(womenClothingArray[index]);
                     localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                    totalCartPrice();
                 });
          });
     }
@@ -268,6 +270,7 @@ function jewellery(pArray){
                     }
                     currentUser.cart.push(jewelleryArray[index]);
                     localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                    totalCartPrice();
                 });
          });
     }
@@ -342,6 +345,7 @@ function electronics(pArray){
                     }
                     currentUser.cart.push(electronicsArray[index]);
                     localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                    totalCartPrice();
                 });
          });
     }
@@ -523,3 +527,20 @@ applyFilterBtn.addEventListener('click',()=>{
     electronics(allFilterArray);
 });
 
+function totalCartPrice(){
+    let price=0;
+    const currentUser=JSON.parse(localStorage.getItem('currentUser'));
+    const cartArray=currentUser.cart;
+    cartArray.forEach(element=>{
+        price+=element.price;    
+    })
+    currentUser.price=price;
+    localStorage.setItem('currentUser',JSON.stringify(currentUser));
+    const users=JSON.parse(localStorage.getItem('users'));
+    users.forEach(element=>{
+        if(element.email===currentUser.email){
+            element.price=price;
+        }
+    })
+    localStorage.setItem('users', JSON.stringify(users));
+}

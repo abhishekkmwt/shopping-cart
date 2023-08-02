@@ -333,6 +333,7 @@ aside{
     align-items: center;
     min-width: 20vw;
     max-width: 20vw;
+    height: fit-content;
 }
 
 .card .item-image{
@@ -352,7 +353,7 @@ aside{
     flex-direction: column;
     padding: 1rem 1rem;
     row-gap: .4rem;
-    min-height: 100px;
+    height: 120px;
 }
 .card .item-details .prizeAndSize{
     display: flex;
@@ -433,14 +434,29 @@ aside{
     font-size: 1.2rem;
     font-weight: 500;
 }
-
-.right-mainCart .checkout-items{
+.right-mainCart .ci{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.right-mainCart .ci .checkout-items{
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1rem 3rem;
+    height: 3rem;
+    
+}
+.right-mainCart .ci .checkout-items .checkout-item-name{
+    width: 80%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+.right-mainCart .ci .checkout-items .checkout-price{
+    width: 20%;
+}
 .right-mainCart .totalAmt{
     width: 100%;
     display: flex;
